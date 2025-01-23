@@ -1,0 +1,20 @@
+<?xml version="1.0" encoding="utf-8"?>
+<odoo>
+    <data>
+        <record id="edit_project_inherit" model="ir.ui.view">
+            <field name="name">edit_project_inherit</field>
+            <field name="model">project.project</field>
+            <field name="inherit_id" ref="project.edit_project" />
+            <field name="arch" type="xml">
+                 <xpath expr="//button[@name='project_update_all_action']" position="before">
+                    <button name="action_open_cloud_instance" class="oe_stat_button" icon="fa-cloud" type="object">
+                        <div class="o_stat_info">
+                            <field name="instance_count" class="oe_stat_value"/>
+                            <span class="o_stat_text">Instance</span>
+                        </div>
+                    </button>
+                </xpath>
+            </field>
+        </record>
+    </data>
+</odoo>

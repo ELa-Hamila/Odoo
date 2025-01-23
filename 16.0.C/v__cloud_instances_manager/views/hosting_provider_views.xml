@@ -1,0 +1,20 @@
+<?xml version="1.0" encoding="utf-8"?>
+<odoo>
+    <data>
+        <record id="action_cloud_instances" model="ir.actions.act_window">
+            <field name="name">Cloud instances</field>
+            <field name="type">ir.actions.act_window</field>
+            <field name="res_model">cloud.instance</field>
+            <field name="view_mode">tree,form</field>
+        </record>
+        <record id="hosting_provider_tree" model="ir.ui.view">
+            <field name="name">hosting.provider.tree</field>
+            <field name="model">hosting.provider</field>
+            <field name="arch" type="xml">
+                <tree editable="bottom">
+                    <field name="name"/>
+                </tree>
+            </field>
+        </record>
+    </data>
+</odoo>

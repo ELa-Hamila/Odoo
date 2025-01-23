@@ -1,0 +1,713 @@
+# Translation of Odoo Server.
+# This file contains the translation of the following modules:
+# 	* v__cloud_instances_manager
+#
+msgid ""
+msgstr ""
+"Project-Id-Version: Odoo Server 16.0-20240122\n"
+"Report-Msgid-Bugs-To: \n"
+"POT-Creation-Date: 2024-03-05 22:02+0000\n"
+"PO-Revision-Date: 2024-03-05 22:02+0000\n"
+"Last-Translator: \n"
+"Language-Team: \n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=UTF-8\n"
+"Content-Transfer-Encoding: \n"
+"Plural-Forms: \n"
+
+#. module: v__cloud_instances_manager
+#: model:mail.template,body_html:v__cloud_instances_manager.ping_notice_mail_template
+msgid ""
+"<div>\n"
+"                    Hi,\n"
+"                    <br>\n"
+"                    <br>\n"
+"                    We want to inform your server <t t-out=\"object.id_address\"></t> is down.\n"
+"                    <br>\n"
+"                    <br>\n"
+"                    ERP team.\n"
+"                </div>\n"
+"            "
+msgstr ""
+
+#. module: v__cloud_instances_manager
+#: model_terms:ir.ui.view,arch_db:v__cloud_instances_manager.edit_project_inherit
+msgid "<span class=\"o_stat_text\">Instance</span>"
+msgstr "Instance"
+
+#. module: v__cloud_instances_manager
+#: model:ir.model.fields,field_description:v__cloud_instances_manager.field_cloud_instance__message_needaction
+msgid "Action Needed"
+msgstr "Action nécessaire"
+
+#. module: v__cloud_instances_manager
+#: model:ir.model.fields,field_description:v__cloud_instances_manager.field_cloud_instance__activity_ids
+msgid "Activities"
+msgstr "Activités"
+
+#. module: v__cloud_instances_manager
+#: model:ir.model.fields,field_description:v__cloud_instances_manager.field_cloud_instance__activity_exception_decoration
+msgid "Activity Exception Decoration"
+msgstr "Activité Exception Décoration"
+
+#. module: v__cloud_instances_manager
+#: model:ir.model.fields,field_description:v__cloud_instances_manager.field_cloud_instance__activity_state
+msgid "Activity State"
+msgstr "État d'activité"
+
+#. module: v__cloud_instances_manager
+#: model:ir.model.fields,field_description:v__cloud_instances_manager.field_cloud_instance__activity_type_icon
+msgid "Activity Type Icon"
+msgstr "Icône de type d'activité"
+
+#. module: v__cloud_instances_manager
+#: model:res.groups,name:v__cloud_instances_manager.group_cloud_instance_administrator
+msgid "Administrator instance"
+msgstr "Instance d'administrateur "
+
+#. module: v__cloud_instances_manager
+#: model:ir.model.fields,field_description:v__cloud_instances_manager.field_cloud_instance__message_attachment_count
+msgid "Attachment Count"
+msgstr "Nombre de pièces jointes"
+
+#. module: v__cloud_instances_manager
+#: model:ir.model.fields,field_description:v__cloud_instances_manager.field_cloud_instance__location
+msgid "Backup Location"
+msgstr "Emplacement du Backup"
+
+#. module: v__cloud_instances_manager
+#: model:ir.model.fields,field_description:v__cloud_instances_manager.field_cloud_instance__backup_provided_by
+msgid "Backup provided by"
+msgstr "Backup fourni par"
+
+#. module: v__cloud_instances_manager
+#: model:ir.model.fields,field_description:v__cloud_instances_manager.field_cloud_instance__backup_type
+msgid "Backup type"
+msgstr "Type du backup"
+
+#. module: v__cloud_instances_manager
+#: model:ir.model.fields,field_description:v__cloud_instances_manager.field_cloud_instance__cpu
+msgid "CPU"
+msgstr "CPU"
+
+#. module: v__cloud_instances_manager
+#: model:ir.model.fields,field_description:v__cloud_instances_manager.field_cloud_instance__partner_id
+msgid "Client"
+msgstr "Client"
+
+#. module: v__cloud_instances_manager
+#: model:ir.model.fields.selection,name:v__cloud_instances_manager.selection__cloud_instance__hosting_type__cloud
+msgid "Cloud"
+msgstr "Cloud"
+
+#. module: v__cloud_instances_manager
+#: model:ir.module.category,name:v__cloud_instances_manager.module_cloud_instance
+msgid "Cloud Instance"
+msgstr "Instance cloud"
+
+#. module: v__cloud_instances_manager
+#: model:ir.ui.menu,name:v__cloud_instances_manager.cloud_instance_root
+msgid "Cloud instance"
+msgstr "Instance cloud"
+
+#. module: v__cloud_instances_manager
+#: model:mail.template,name:v__cloud_instances_manager.ping_notice_mail_template
+msgid "Cloud instance: ping notice"
+msgstr "Instance cloud :ping notice"
+
+#. module: v__cloud_instances_manager
+#: model:ir.actions.act_window,name:v__cloud_instances_manager.action_cloud_instances
+msgid "Cloud instances "
+msgstr "Instance cloud"
+
+#. module: v__cloud_instances_manager
+#: model:ir.model.fields,field_description:v__cloud_instances_manager.field_cloud_instance__companies_number
+msgid "Companies number"
+msgstr "Numéro d'entreprise"
+
+#. module: v__cloud_instances_manager
+#: model:ir.ui.menu,name:v__cloud_instances_manager.configuration_root
+msgid "Configuration"
+msgstr "Configuration"
+
+#. module: v__cloud_instances_manager
+#: model:ir.model.fields,field_description:v__cloud_instances_manager.field_cloud_instance__create_uid
+#: model:ir.model.fields,field_description:v__cloud_instances_manager.field_hosting_provider__create_uid
+#: model:ir.model.fields,field_description:v__cloud_instances_manager.field_odoo_version__create_uid
+#: model:ir.model.fields,field_description:v__cloud_instances_manager.field_operating_system__create_uid
+#: model:ir.model.fields,field_description:v__cloud_instances_manager.field_vpn_type__create_uid
+msgid "Created by"
+msgstr "Créé par"
+
+#. module: v__cloud_instances_manager
+#: model:ir.model.fields,field_description:v__cloud_instances_manager.field_cloud_instance__create_date
+#: model:ir.model.fields,field_description:v__cloud_instances_manager.field_hosting_provider__create_date
+#: model:ir.model.fields,field_description:v__cloud_instances_manager.field_odoo_version__create_date
+#: model:ir.model.fields,field_description:v__cloud_instances_manager.field_operating_system__create_date
+#: model:ir.model.fields,field_description:v__cloud_instances_manager.field_vpn_type__create_date
+msgid "Created on"
+msgstr "Créé sur"
+
+#. module: v__cloud_instances_manager
+#: model:ir.model.fields.selection,name:v__cloud_instances_manager.selection__cloud_instance__backup_provided_by__customer
+msgid "Customer"
+msgstr "Client"
+
+#. module: v__cloud_instances_manager
+#: model:ir.model.fields.selection,name:v__cloud_instances_manager.selection__cloud_instance__backup_type__dbf
+msgid "DB+Filestore"
+msgstr "DB+Filestore"
+
+#. module: v__cloud_instances_manager
+#: model:ir.model.fields,field_description:v__cloud_instances_manager.field_cloud_instance__duration
+msgid "Data retention period"
+msgstr "Durée de conservation des données"
+
+#. module: v__cloud_instances_manager
+#: model:ir.model.fields,field_description:v__cloud_instances_manager.field_cloud_instance__db_login
+msgid "Database login"
+msgstr "login de la base de données"
+
+#. module: v__cloud_instances_manager
+#: model:ir.model.fields,field_description:v__cloud_instances_manager.field_cloud_instance__db_pwd
+msgid "Database password"
+msgstr "Mot de passe de la base de données"
+
+#. module: v__cloud_instances_manager
+#: model:ir.model.fields.selection,name:v__cloud_instances_manager.selection__cloud_instance__environment__dev
+msgid "Dev"
+msgstr "Dev"
+
+#. module: v__cloud_instances_manager
+#: model:ir.model.fields,field_description:v__cloud_instances_manager.field_cloud_instance__display_name
+#: model:ir.model.fields,field_description:v__cloud_instances_manager.field_hosting_provider__display_name
+#: model:ir.model.fields,field_description:v__cloud_instances_manager.field_odoo_version__display_name
+#: model:ir.model.fields,field_description:v__cloud_instances_manager.field_operating_system__display_name
+#: model:ir.model.fields,field_description:v__cloud_instances_manager.field_vpn_type__display_name
+msgid "Display Name"
+msgstr "Afficher un nom"
+
+#. module: v__cloud_instances_manager
+#: model:ir.model.fields.selection,name:v__cloud_instances_manager.selection__cloud_instance__state__draft
+msgid "Draft"
+msgstr "Brouillon"
+
+#. module: v__cloud_instances_manager
+#: model:ir.model.fields,field_description:v__cloud_instances_manager.field_cloud_instance__environment
+msgid "Environment"
+msgstr "Environment"
+
+#. module: v__cloud_instances_manager
+#: model:ir.model.fields,field_description:v__cloud_instances_manager.field_cloud_instance__message_follower_ids
+msgid "Followers"
+msgstr "Followers"
+
+#. module: v__cloud_instances_manager
+#: model:ir.model.fields,field_description:v__cloud_instances_manager.field_cloud_instance__message_partner_ids
+msgid "Followers (Partners)"
+msgstr "Followers (partenaires)"
+
+#. module: v__cloud_instances_manager
+#: model:ir.model.fields,help:v__cloud_instances_manager.field_cloud_instance__activity_type_icon
+msgid "Font awesome icon e.g. fa-tasks"
+msgstr ""
+
+#. module: v__cloud_instances_manager
+#: model:ir.model.fields.selection,name:v__cloud_instances_manager.selection__cloud_instance__storage_type__hdd
+msgid "HDD"
+msgstr "HDD"
+
+#. module: v__cloud_instances_manager
+#: model:ir.model.fields,field_description:v__cloud_instances_manager.field_cloud_instance__has_message
+msgid "Has Message"
+msgstr "A un message"
+
+#. module: v__cloud_instances_manager
+#: model:ir.model.fields.selection,name:v__cloud_instances_manager.selection__cloud_instance__backup_provided_by__host
+msgid "Host"
+msgstr "Hébergement"
+
+#. module: v__cloud_instances_manager
+#: model:ir.model,name:v__cloud_instances_manager.model_hosting_provider
+msgid "Hosting Provider"
+msgstr "Fournisseur d'hébergement"
+
+#. module: v__cloud_instances_manager
+#: model:ir.model.fields,field_description:v__cloud_instances_manager.field_cloud_instance__hosting_type
+msgid "Hosting Type"
+msgstr "Type d'hébergement"
+
+#. module: v__cloud_instances_manager
+#: model:ir.actions.act_window,name:v__cloud_instances_manager.action_hosting_provider
+#: model:ir.model.fields,field_description:v__cloud_instances_manager.field_cloud_instance__hosting_provider_id
+#: model:ir.ui.menu,name:v__cloud_instances_manager.hosting_provider_root
+msgid "Hosting provider"
+msgstr "Fournisseur d'hébergement"
+
+#. module: v__cloud_instances_manager
+#: model:ir.model.fields,field_description:v__cloud_instances_manager.field_cloud_instance__id
+#: model:ir.model.fields,field_description:v__cloud_instances_manager.field_hosting_provider__id
+#: model:ir.model.fields,field_description:v__cloud_instances_manager.field_odoo_version__id
+#: model:ir.model.fields,field_description:v__cloud_instances_manager.field_operating_system__id
+#: model:ir.model.fields,field_description:v__cloud_instances_manager.field_vpn_type__id
+msgid "ID"
+msgstr "ID"
+
+#. module: v__cloud_instances_manager
+#: model:ir.model.fields,field_description:v__cloud_instances_manager.field_cloud_instance__ip_address
+msgid "IP address"
+msgstr "adresse IP"
+
+#. module: v__cloud_instances_manager
+#: model:ir.model.fields,field_description:v__cloud_instances_manager.field_cloud_instance__activity_exception_icon
+msgid "Icon"
+msgstr "Icône"
+
+#. module: v__cloud_instances_manager
+#: model:ir.model.fields,help:v__cloud_instances_manager.field_cloud_instance__activity_exception_icon
+msgid "Icon to indicate an exception activity."
+msgstr "Icône pour indiquer une activité d'exception ."
+
+#. module: v__cloud_instances_manager
+#: model:ir.model.fields,help:v__cloud_instances_manager.field_cloud_instance__message_needaction
+msgid "If checked, new messages require your attention."
+msgstr "Si cette case est cochée, les nouveaux messages nécessitent votre attention."
+
+#. module: v__cloud_instances_manager
+#: model:ir.model.fields,help:v__cloud_instances_manager.field_cloud_instance__message_has_error
+#: model:ir.model.fields,help:v__cloud_instances_manager.field_cloud_instance__message_has_sms_error
+msgid "If checked, some messages have a delivery error."
+msgstr "Si coché, certains messages ont une erreur de livraison."
+
+#. module: v__cloud_instances_manager
+#: model:ir.model.fields,field_description:v__cloud_instances_manager.field_cloud_instance__hr_employee_id
+msgid "Installed by"
+msgstr "Installé par"
+
+#. module: v__cloud_instances_manager
+#: model:ir.model.fields,field_description:v__cloud_instances_manager.field_cloud_instance__installed_on
+msgid "Installed on"
+msgstr "Installé sur"
+
+#. module: v__cloud_instances_manager
+#: model:ir.ui.menu,name:v__cloud_instances_manager.instance_root
+msgid "Instance"
+msgstr "Instance"
+
+#. module: v__cloud_instances_manager
+#: model:ir.model.fields,field_description:v__cloud_instances_manager.field_project_project__instance_count
+msgid "Instance Count"
+msgstr "Nombre d'instances"
+
+#. module: v__cloud_instances_manager
+#: model:ir.model.fields,field_description:v__cloud_instances_manager.field_cloud_instance__message_is_follower
+msgid "Is Follower"
+msgstr ""
+
+#. module: v__cloud_instances_manager
+#: model:ir.model.fields,field_description:v__cloud_instances_manager.field_cloud_instance____last_update
+#: model:ir.model.fields,field_description:v__cloud_instances_manager.field_hosting_provider____last_update
+#: model:ir.model.fields,field_description:v__cloud_instances_manager.field_odoo_version____last_update
+#: model:ir.model.fields,field_description:v__cloud_instances_manager.field_operating_system____last_update
+#: model:ir.model.fields,field_description:v__cloud_instances_manager.field_vpn_type____last_update
+msgid "Last Modified on"
+msgstr "Dernière modification le"
+
+#. module: v__cloud_instances_manager
+#: model:ir.model.fields,field_description:v__cloud_instances_manager.field_cloud_instance__write_uid
+#: model:ir.model.fields,field_description:v__cloud_instances_manager.field_hosting_provider__write_uid
+#: model:ir.model.fields,field_description:v__cloud_instances_manager.field_odoo_version__write_uid
+#: model:ir.model.fields,field_description:v__cloud_instances_manager.field_operating_system__write_uid
+#: model:ir.model.fields,field_description:v__cloud_instances_manager.field_vpn_type__write_uid
+msgid "Last Updated by"
+msgstr "Dernière mise à jour par"
+
+#. module: v__cloud_instances_manager
+#: model:ir.model.fields,field_description:v__cloud_instances_manager.field_cloud_instance__write_date
+#: model:ir.model.fields,field_description:v__cloud_instances_manager.field_hosting_provider__write_date
+#: model:ir.model.fields,field_description:v__cloud_instances_manager.field_odoo_version__write_date
+#: model:ir.model.fields,field_description:v__cloud_instances_manager.field_operating_system__write_date
+#: model:ir.model.fields,field_description:v__cloud_instances_manager.field_vpn_type__write_date
+msgid "Last Updated on"
+msgstr "Dernière mise à jour le"
+
+#. module: v__cloud_instances_manager
+#: model:ir.model.fields.selection,name:v__cloud_instances_manager.selection__cloud_instance__hosting_type__local
+msgid "Local"
+msgstr "Local"
+
+#. module: v__cloud_instances_manager
+#: model:ir.model.fields,field_description:v__cloud_instances_manager.field_cloud_instance__log_command
+msgid "Log command"
+msgstr "Log command"
+
+#. module: v__cloud_instances_manager
+#: model:ir.model.fields,field_description:v__cloud_instances_manager.field_cloud_instance__message_main_attachment_id
+msgid "Main Attachment"
+msgstr "Pièce jointe principale"
+
+#. module: v__cloud_instances_manager
+#: model:ir.model.fields,field_description:v__cloud_instances_manager.field_cloud_instance__master_pwd
+msgid "Master Password"
+msgstr "Master Password"
+
+#. module: v__cloud_instances_manager
+#: model:ir.model.fields,field_description:v__cloud_instances_manager.field_cloud_instance__message_has_error
+msgid "Message Delivery error"
+msgstr "Erreur de livraison du message"
+
+#. module: v__cloud_instances_manager
+#: model:ir.model.fields,field_description:v__cloud_instances_manager.field_cloud_instance__message_ids
+msgid "Messages"
+msgstr "Messages"
+
+#. module: v__cloud_instances_manager
+#: model:ir.model.fields,field_description:v__cloud_instances_manager.field_cloud_instance__path
+msgid "Module Path"
+msgstr "Chemin du module"
+
+#. module: v__cloud_instances_manager
+#: model:ir.model.fields,field_description:v__cloud_instances_manager.field_cloud_instance__multi_company
+msgid "Multi Company"
+msgstr "Multi-société"
+
+#. module: v__cloud_instances_manager
+#: model_terms:ir.ui.view,arch_db:v__cloud_instances_manager.cloud_instance_form
+msgid "Multi_company"
+msgstr "Multi_entreprise"
+
+#. module: v__cloud_instances_manager
+#: model:ir.model.fields,field_description:v__cloud_instances_manager.field_cloud_instance__my_activity_date_deadline
+msgid "My Activity Deadline"
+msgstr "Date limite de mon activité"
+
+#. module: v__cloud_instances_manager
+#: model:ir.model.fields.selection,name:v__cloud_instances_manager.selection__cloud_instance__ping_status__nok
+msgid "NOK"
+msgstr "NOK"
+
+#. module: v__cloud_instances_manager
+#: model:ir.model.fields.selection,name:v__cloud_instances_manager.selection__cloud_instance__storage_type__nvme
+msgid "NVME"
+msgstr "NVME"
+
+#. module: v__cloud_instances_manager
+#: model:ir.model.fields,field_description:v__cloud_instances_manager.field_hosting_provider__name
+#: model:ir.model.fields,field_description:v__cloud_instances_manager.field_odoo_version__name
+#: model:ir.model.fields,field_description:v__cloud_instances_manager.field_operating_system__name
+#: model:ir.model.fields,field_description:v__cloud_instances_manager.field_vpn_type__name
+msgid "Name"
+msgstr "Nom"
+
+#. module: v__cloud_instances_manager
+#: model_terms:ir.ui.view,arch_db:v__cloud_instances_manager.cloud_instance_form
+msgid "Network Configuration"
+msgstr "Configuration du réseau"
+
+#. module: v__cloud_instances_manager
+#: model:ir.model.fields,field_description:v__cloud_instances_manager.field_cloud_instance__activity_date_deadline
+msgid "Next Activity Deadline"
+msgstr "Date limite de la prochaine activité"
+
+#. module: v__cloud_instances_manager
+#: model:ir.model.fields,field_description:v__cloud_instances_manager.field_cloud_instance__activity_summary
+msgid "Next Activity Summary"
+msgstr "Résumé de l'activité suivante"
+
+#. module: v__cloud_instances_manager
+#: model:ir.model.fields,field_description:v__cloud_instances_manager.field_cloud_instance__activity_type_id
+msgid "Next Activity Type"
+msgstr "Type d'activité suivant"
+
+#. module: v__cloud_instances_manager
+#: model:ir.model.fields,field_description:v__cloud_instances_manager.field_cloud_instance__message_needaction_counter
+msgid "Number of Actions"
+msgstr "Nombre d'actions"
+
+#. module: v__cloud_instances_manager
+#: model:ir.model.fields,field_description:v__cloud_instances_manager.field_cloud_instance__message_has_error_counter
+msgid "Number of errors"
+msgstr "Nombre d'erreurs"
+
+#. module: v__cloud_instances_manager
+#: model:ir.model.fields,help:v__cloud_instances_manager.field_cloud_instance__message_needaction_counter
+msgid "Number of messages requiring action"
+msgstr "Nombre de messages nécessitant une action"
+
+#. module: v__cloud_instances_manager
+#: model:ir.model.fields,help:v__cloud_instances_manager.field_cloud_instance__message_has_error_counter
+msgid "Number of messages with delivery error"
+msgstr "Nombre de messages avec erreur de livraison"
+
+#. module: v__cloud_instances_manager
+#: model:ir.model.fields.selection,name:v__cloud_instances_manager.selection__cloud_instance__ping_status__ok
+msgid "OK"
+msgstr "OK"
+
+#. module: v__cloud_instances_manager
+#: model_terms:ir.ui.view,arch_db:v__cloud_instances_manager.cloud_instance_form
+msgid "Odoo"
+msgstr "Odoo"
+
+#. module: v__cloud_instances_manager
+#: model:ir.model.fields,field_description:v__cloud_instances_manager.field_cloud_instance__odoo_pwd
+msgid "Odoo Password "
+msgstr "Mot de passe Odoo"
+
+#. module: v__cloud_instances_manager
+#: model:ir.model.fields,field_description:v__cloud_instances_manager.field_cloud_instance__odoo_url
+msgid "Odoo URL"
+msgstr "URL Odoo"
+
+#. module: v__cloud_instances_manager
+#: model:ir.model.fields,field_description:v__cloud_instances_manager.field_cloud_instance__odoo_version_id
+#: model:ir.ui.menu,name:v__cloud_instances_manager.odoo_version_root
+msgid "Odoo Version"
+msgstr "Version Odoo"
+
+#. module: v__cloud_instances_manager
+#: model:ir.model.fields,field_description:v__cloud_instances_manager.field_cloud_instance__odoo_login
+msgid "Odoo login"
+msgstr "Connexion Odoo"
+
+#. module: v__cloud_instances_manager
+#: model:ir.actions.act_window,name:v__cloud_instances_manager.action_odoo_version
+msgid "Odoo version"
+msgstr "Version Odoo"
+
+#. module: v__cloud_instances_manager
+#: model:ir.model,name:v__cloud_instances_manager.model_odoo_version
+msgid "Odoo version details"
+msgstr "Détails de la version Odoo"
+
+#. module: v__cloud_instances_manager
+#: model:ir.model,name:v__cloud_instances_manager.model_operating_system
+#: model:ir.model.fields,field_description:v__cloud_instances_manager.field_cloud_instance__operating_system_id
+msgid "Operating System"
+msgstr ""
+
+#. module: v__cloud_instances_manager
+#: model:ir.actions.act_window,name:v__cloud_instances_manager.action_operating_system
+#: model:ir.ui.menu,name:v__cloud_instances_manager.operating_system_root
+msgid "Operating system"
+msgstr "Système opérateur"
+
+#. module: v__cloud_instances_manager
+#: model:ir.actions.server,name:v__cloud_instances_manager.cloud_instance_cron_ir_actions_server
+#: model:ir.cron,cron_name:v__cloud_instances_manager.cloud_instance_cron
+msgid "Ping server test"
+msgstr "Test du serveur Ping"
+
+#. module: v__cloud_instances_manager
+#: model:ir.model.fields,field_description:v__cloud_instances_manager.field_cloud_instance__ping_status
+msgid "Ping status"
+msgstr "Statut du ping"
+
+#. module: v__cloud_instances_manager
+#: model:ir.model.fields,field_description:v__cloud_instances_manager.field_cloud_instance__port_redirection
+msgid "Port Redirection"
+msgstr "Redirection de ports"
+
+#. module: v__cloud_instances_manager
+#: model:ir.model.fields,field_description:v__cloud_instances_manager.field_cloud_instance__port_number
+msgid "Port number"
+msgstr "Numéro de port"
+
+#. module: v__cloud_instances_manager
+#: model:ir.model.fields.selection,name:v__cloud_instances_manager.selection__cloud_instance__environment__production
+msgid "Production"
+msgstr "Production"
+
+#. module: v__cloud_instances_manager
+#: model:ir.model,name:v__cloud_instances_manager.model_project_project
+#: model:ir.model.fields,field_description:v__cloud_instances_manager.field_cloud_instance__project_id
+msgid "Project"
+msgstr "Projet"
+
+#. module: v__cloud_instances_manager
+#: model:ir.model.fields,field_description:v__cloud_instances_manager.field_cloud_instance__ram
+msgid "RAM"
+msgstr "RAM"
+
+#. module: v__cloud_instances_manager
+#. odoo-python
+#: code:addons/v__cloud_instances_manager/models/project_project.py:0
+#, python-format
+msgid "Related instances"
+msgstr "Instances associées"
+
+#. module: v__cloud_instances_manager
+#: model:ir.model.fields,field_description:v__cloud_instances_manager.field_cloud_instance__activity_user_id
+msgid "Responsible User"
+msgstr "Utilisateur responsable"
+
+#. module: v__cloud_instances_manager
+#: model:ir.model.fields,field_description:v__cloud_instances_manager.field_cloud_instance__restart
+msgid "Restart command"
+msgstr "Commande de redémarrage"
+
+#. module: v__cloud_instances_manager
+#: model:ir.model.fields.selection,name:v__cloud_instances_manager.selection__cloud_instance__storage_type__sata
+msgid "SATA"
+msgstr "SATA"
+
+#. module: v__cloud_instances_manager
+#: model:ir.model.fields.selection,name:v__cloud_instances_manager.selection__cloud_instance__storage_type__sdd
+msgid "SDD"
+msgstr "SDD"
+
+#. module: v__cloud_instances_manager
+#: model:ir.model.fields,field_description:v__cloud_instances_manager.field_cloud_instance__message_has_sms_error
+msgid "SMS Delivery error"
+msgstr "Erreur de livraison SMS"
+
+#. module: v__cloud_instances_manager
+#: model:ir.model.fields,field_description:v__cloud_instances_manager.field_cloud_instance__ssh_pwd
+msgid "SSH Password"
+msgstr "Mot de passe SSH"
+
+#. module: v__cloud_instances_manager
+#: model:ir.model.fields,field_description:v__cloud_instances_manager.field_cloud_instance__ssh_login
+msgid "SSH login"
+msgstr "Connexion SSH"
+
+#. module: v__cloud_instances_manager
+#: model:mail.template,description:v__cloud_instances_manager.ping_notice_mail_template
+msgid "Sent to the client to inform that the server is down"
+msgstr "Envoyé au client pour l'informer que le serveur est en panne"
+
+#. module: v__cloud_instances_manager
+#: model:ir.model.fields.selection,name:v__cloud_instances_manager.selection__cloud_instance__backup_type__server
+msgid "Server"
+msgstr "Serveur"
+
+#. module: v__cloud_instances_manager
+#: model:mail.template,subject:v__cloud_instances_manager.ping_notice_mail_template
+msgid "Server {{ object.id_address }} is down!"
+msgstr "Le serveur {{ object.id_address }} est en panne!"
+
+#. module: v__cloud_instances_manager
+#: model_terms:ir.ui.view,arch_db:v__cloud_instances_manager.cloud_instance_form
+msgid "Show"
+msgstr "Montrer"
+
+#. module: v__cloud_instances_manager
+#: model:ir.model.fields,field_description:v__cloud_instances_manager.field_cloud_instance__show_password
+msgid "Show Password"
+msgstr "Montrer le mot de passe"
+
+#. module: v__cloud_instances_manager
+#: model:ir.model.fields,field_description:v__cloud_instances_manager.field_cloud_instance__state
+msgid "State"
+msgstr "État"
+
+#. module: v__cloud_instances_manager
+#: model:ir.model.fields,help:v__cloud_instances_manager.field_cloud_instance__activity_state
+msgid ""
+"Status based on activities\n"
+"Overdue: Due date is already passed\n"
+"Today: Activity date is today\n"
+"Planned: Future activities."
+msgstr ""
+
+#. module: v__cloud_instances_manager
+#: model:ir.model.fields.selection,name:v__cloud_instances_manager.selection__cloud_instance__state__stopped
+msgid "Stopped"
+msgstr "Arrêté"
+
+#. module: v__cloud_instances_manager
+#: model:ir.model.fields,field_description:v__cloud_instances_manager.field_cloud_instance__storage
+msgid "Storage"
+msgstr "Stockage"
+
+#. module: v__cloud_instances_manager
+#: model:ir.model.fields,field_description:v__cloud_instances_manager.field_cloud_instance__storage_type
+msgid "Storage Type"
+msgstr "Type de stockage"
+
+#. module: v__cloud_instances_manager
+#: model:ir.model.fields.selection,name:v__cloud_instances_manager.selection__cloud_instance__environment__test
+msgid "Test"
+msgstr "Test"
+
+#. module: v__cloud_instances_manager
+#: model:ir.model.fields,field_description:v__cloud_instances_manager.field_cloud_instance__title
+#: model_terms:ir.ui.view,arch_db:v__cloud_instances_manager.cloud_instance_form
+msgid "Title"
+msgstr "Titre"
+
+#. module: v__cloud_instances_manager
+#: model:ir.model.fields,help:v__cloud_instances_manager.field_cloud_instance__activity_exception_decoration
+msgid "Type of the exception activity on record."
+msgstr "Type d’activité exceptionnelle enregistrée."
+
+#. module: v__cloud_instances_manager
+#: model:res.groups,name:v__cloud_instances_manager.group_cloud_instance_user
+msgid "User instance"
+msgstr "utilisateur d'instance"
+
+#. module: v__cloud_instances_manager
+#: model:ir.model.fields.selection,name:v__cloud_instances_manager.selection__cloud_instance__backup_provided_by__veganet
+msgid "VEGANET"
+msgstr "VEGANET"
+
+#. module: v__cloud_instances_manager
+#: model:ir.model.fields,field_description:v__cloud_instances_manager.field_cloud_instance__vpn_pwd
+msgid "VPN Password"
+msgstr "Mot de passe VPN"
+
+#. module: v__cloud_instances_manager
+#: model:ir.model.fields,field_description:v__cloud_instances_manager.field_cloud_instance__vpn_type_id
+msgid "VPN Type"
+msgstr "Type de VPN"
+
+#. module: v__cloud_instances_manager
+#: model:ir.model.fields,field_description:v__cloud_instances_manager.field_cloud_instance__vpn_file
+msgid "VPN file"
+msgstr "Fichier VPN"
+
+#. module: v__cloud_instances_manager
+#: model:ir.model.fields,field_description:v__cloud_instances_manager.field_cloud_instance__vpn_login
+msgid "VPN login"
+msgstr "VPN login"
+
+#. module: v__cloud_instances_manager
+#: model:ir.actions.act_window,name:v__cloud_instances_manager.action_vpn_type
+#: model:ir.ui.menu,name:v__cloud_instances_manager.vpn_type_root
+msgid "VPN type"
+msgstr "Type de VPN"
+
+#. module: v__cloud_instances_manager
+#: model:ir.model.fields,field_description:v__cloud_instances_manager.field_cloud_instance__vpn
+msgid "Via VPN"
+msgstr "Via VPN"
+
+#. module: v__cloud_instances_manager
+#: model:ir.model,name:v__cloud_instances_manager.model_vpn_type
+msgid "Vpn type"
+msgstr "Type VPN"
+
+#. module: v__cloud_instances_manager
+#: model:ir.model.fields,field_description:v__cloud_instances_manager.field_cloud_instance__website_message_ids
+msgid "Website Messages"
+msgstr "Messages du site Web"
+
+#. module: v__cloud_instances_manager
+#: model:ir.model.fields,help:v__cloud_instances_manager.field_cloud_instance__website_message_ids
+msgid "Website communication history"
+msgstr "Historique des communications du site Web"
+
+#. module: v__cloud_instances_manager
+#: model:ir.model.fields,field_description:v__cloud_instances_manager.field_cloud_instance__backup
+msgid "With Backup"
+msgstr "Avec Backup"
+
+#. module: v__cloud_instances_manager
+#: model:ir.model.fields.selection,name:v__cloud_instances_manager.selection__cloud_instance__state__working
+msgid "Working"
+msgstr "En marche"
+
+#. module: v__cloud_instances_manager
+#: model:ir.model,name:v__cloud_instances_manager.model_cloud_instance
+msgid "cloud instance"
+msgstr "cloud instance"

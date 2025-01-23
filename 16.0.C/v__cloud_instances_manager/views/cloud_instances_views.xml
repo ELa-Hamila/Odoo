@@ -1,0 +1,163 @@
+<?xml version="1.0" encoding="utf-8"?>
+<odoo>
+    <data>
+        <record id="action_cloud_instances" model="ir.actions.act_window">
+            <field name="name">Cloud instances</field>
+            <field name="type">ir.actions.act_window</field>
+            <field name="res_model">cloud.instance</field>
+            <field name="view_mode">tree,form</field>
+        </record>
+        <record id="cloud_instance_form" model="ir.ui.view">
+            <field name="name">cloud.instance.form</field>
+            <field name="model">cloud.instance</field>
+            <field name="arch" type="xml">
+                <form>
+                    <header>
+                        <field name="state" widget="statusbar" options="{'clickable': '1'}"/>
+                    </header>
+                    <sheet>
+                        <div class="oe_title">
+                            <h1 class="d-flex flex-row">
+                                <field name="title" placeholder="Title" style="font-size: min(4vw, 2.6rem);" />
+                            </h1>
+                            <group>
+                                <field name="partner_id"/>
+                                <field name="project_id" options="{'no_create': 1, 'no_edit': 1}"/>
+                                <field name="environment"/>
+                            </group>
+                        </div>
+                        <notebook>
+                            <page name="Odoo" string="Odoo">
+                                <group>
+                                    <field name="odoo_version_id" options="{'no_create': 1, 'no_edit': 1}" />
+                                    <field name="odoo_url" />
+                                    <field name="odoo_login"/>
+                                </group>
+                                <group>
+                                    <field name="show_password" invisible="1"/>
+                                    <label for="odoo_pwd"/>
+                                    <div class="o_row">
+                                        <field name="odoo_pwd" class="o_hr_narrow_field" password="True" attrs="{'invisible': [('show_password', '=', True)]}"/>
+                                        <field name="odoo_pwd" class="o_hr_narrow_field" password="False" attrs="{'invisible': [('show_password', '=', False)]}"/>
+                                        <button string="Show" class="btn btn-link" type="object" name="toggle_password_visibility" />
+                                    </div>
+                                </group>
+                                <group>
+                                    <field name="master_pwd" widget="password" password="True"/>
+                                </group>
+                                <group>
+                                    <field name="hr_employee_id"/>
+                                    <field name="installed_on" />
+                                </group>
+                            </page>
+                            <page name="Host Details">
+                                <group>
+                                    <group>
+                                        <field name="hosting_type" />
+                                        <field name="hosting_provider_id" attrs="{'invisible': [('hosting_type', '!=', 'cloud')]}"  options="{'no_create': 1, 'no_edit': 1}"/>
+                                        <field name="operating_system_id" options="{'no_create': 1, 'no_edit': 1}"/>
+                                    </group>
+                                    <group>
+                                        <field name="cpu"/>
+                                        <field name="ram" />
+                                        <field name="storage" />
+                                        <field name="storage_type"/>
+                                    </group>
+                                </group>
+                            </page>
+                            <page name="Vpn Details">
+                                <group>
+                                    <field name="vpn" />
+                                    <field name="vpn_type_id" options="{'no_create': 1, 'no_edit': 1}" attrs="{'invisible': [('vpn', '!=', True)]}" />
+                                    <field name="vpn_login"  attrs="{'invisible': [('vpn', '!=', True)]}"/>
+                                </group>
+                                <group attrs="{'invisible': [('vpn', '!=', True)]}">
+                                    <field name="show_password" invisible="1"/>
+                                    <label for="vpn_pwd"/>
+                                    <div class="o_row" >
+                                        <field name="vpn_pwd" class="o_hr_narrow_field" password="True" attrs="{'invisible': [('show_password', '=', True)]}" />
+                                        <field name="vpn_pwd" class="o_hr_narrow_field" password="False" attrs="{'invisible': [('show_password', '=', False)]}" />
+                                        <button string="Show" class="btn btn-link" type="object" name="toggle_password_visibility" />
+                                    </div>
+                                    <field name="vpn_file" attrs="{'invisible': [('vpn', '!=', True)]}" />
+                                </group>
+                            </page>
+                            <page name="Backup">
+                                <group>
+                                    <field name="backup"/>
+                                    <field name="backup_provided_by" attrs="{'invisible': [('backup', '!=', True)]}" />
+                                    <field name="backup_type" attrs="{'invisible': [('backup', '!=', True)]}" />
+                                    <field name="location" attrs="{'invisible': [('backup', '!=', True)]}"/>
+                                    <field name="duration" attrs="{'invisible': [('backup', '!=', True)]}"/>
+                                </group>
+                            </page>
+                            <page name="Database">
+                                <group>
+                                    <field name="db_login" />
+                                </group>
+                                <group>
+                                    <field name="show_password" invisible="1"/>
+                                    <label for="db_pwd" />
+                                    <div>
+                                        <field name="db_pwd" class="o_hr_narrow_field" password="True" attrs="{'invisible': [('show_password', '=', True)]}"/>
+                                        <field name="db_pwd" class="o_hr_narrow_field" password="True" attrs="{'invisible': [('show_password', '!=', True)]}"/>
+                                        <button string="Show" class="btn btn-link" type="object" name="toggle_password_visibility" />
+                                    </div>
+                                </group>
+                                <group string="Multi_company">
+                                    <field name="multi_company"/>
+                                    <field name="companies_number" attrs="{'invisible': [('multi_company', '!=', True)]}"/>
+                                </group>
+                            </page>
+                            <page name="Maintenance">
+                                <group>
+                                    <field name="ping_status"/>
+                                    <field name="path"/>
+                                    <field name="log_command" />
+                                    <field name="restart"/>
+                                </group>
+                            </page>
+                            <page string="Network Configuration">
+                                <group>
+                                    <field name="ip_address"/>
+                                    <field name="ssh_login"/>
+                                </group>
+                                <group>
+                                    <label for="ssh_pwd"/>
+                                    <div>
+                                        <field name="ssh_pwd" class="o_hr_narrow_field" password="True" attrs="{'invisible': [('show_password', '=', True)]}"/>
+                                        <field name="ssh_pwd" class="o_hr_narrow_field" password="True" attrs="{'invisible': [('show_password', '!=', True)]}"/>
+                                        <button string="Show" class="btn btn-link" type="object" name="toggle_password_visibility" />
+                                    </div>
+                                    <field name="port_number"/>
+                                    <field name="port_redirection"/>
+                                </group>
+                            </page>
+                        </notebook>
+                    </sheet>
+                    <div class="oe_chatter">
+                        <field name="message_follower_ids"/>
+                        <field name="activity_ids"/>
+                        <field name="message_ids"/>
+                    </div>
+                </form>
+            </field>
+        </record>
+        <record id="cloud_instance_tree" model="ir.ui.view">
+            <field name="name">cloud_instance.tree</field>
+            <field name="model">cloud.instance</field>
+            <field name="arch" type="xml">
+                <tree>
+                    <field name="title"/>
+                    <field name="partner_id"/>
+                    <field name="odoo_version_id"/>
+                    <field name="environment"/>
+                    <field name="state" widget="badge"
+                           decoration-success="state == 'working'"
+                           decoration-danger="state == 'stopped'"
+                           decoration-info="state == 'draft'"/>
+                </tree>
+            </field>
+        </record>
+    </data>
+</odoo>

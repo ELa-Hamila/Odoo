@@ -1,0 +1,98 @@
+<?xml version="1.0" encoding="utf-8"?>
+<odoo>
+    <data>
+        <record id="action_cloud_instances" model="ir.actions.act_window">
+            <field name="name">Cloud instances</field>
+            <field name="type">ir.actions.act_window</field>
+            <field name="res_model">cloud.instance</field>
+            <field name="view_mode">tree,form</field>
+        </record>
+
+        <record id="action_operating_system" model="ir.actions.act_window">
+            <field name="name">Operating system</field>
+            <field name="type">ir.actions.act_window</field>
+            <field name="res_model">operating.system</field>
+            <field name="view_mode">tree</field>
+        </record>
+
+         <record id="action_vpn_type" model="ir.actions.act_window">
+            <field name="name">VPN type</field>
+            <field name="type">ir.actions.act_window</field>
+            <field name="res_model">vpn.type</field>
+            <field name="view_mode">tree</field>
+        </record>
+
+         <record id="action_odoo_version" model="ir.actions.act_window">
+            <field name="name">Odoo version</field>
+            <field name="type">ir.actions.act_window</field>
+            <field name="res_model">odoo.version</field>
+            <field name="view_mode">tree</field>
+        </record>
+
+        <record id="action_hosting_provider" model="ir.actions.act_window">
+            <field name="name">Hosting provider</field>
+            <field name="type">ir.actions.act_window</field>
+            <field name="res_model">hosting.provider</field>
+            <field name="view_mode">tree</field>
+        </record>
+
+         <menuitem
+            id="cloud_instance_root"
+            name="Cloud instance"
+            action="action_cloud_instances"
+            sequence="1"
+            groups="group_cloud_instance_user"
+
+         />
+
+        <menuitem
+            id="instance_root"
+            name="Instance"
+            action="action_cloud_instances"
+            parent="cloud_instance_root"
+            sequence="0"
+        />
+
+        <menuitem
+            id="configuration_root"
+            name="Configuration"
+            parent="cloud_instance_root"
+            sequence="1"
+            groups="group_cloud_instance_administrator"
+
+        />
+
+        <menuitem
+            id="vpn_type_root"
+            name="VPN type"
+            action="action_vpn_type"
+            parent="configuration_root"
+            sequence="1"
+        />
+
+        <menuitem
+            id="operating_system_root"
+            name="Operating system"
+            action="action_operating_system"
+            parent="configuration_root"
+            sequence="2"
+        />
+
+        <menuitem
+            id="hosting_provider_root"
+            name="Hosting provider"
+            action="action_hosting_provider"
+            parent="configuration_root"
+            sequence="3"
+        />
+
+        <menuitem
+            id="odoo_version_root"
+            name="Odoo Version"
+            action="action_odoo_version"
+            parent="configuration_root"
+            sequence="4"
+        />
+
+    </data>
+</odoo>

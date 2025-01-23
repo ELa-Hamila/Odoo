@@ -1,0 +1,31 @@
+<odoo>
+    <data>
+<!--        <record id="action_hide_password" model="ir.actions.server">-->
+<!--&lt;!&ndash;        <record id="action_hide_password" model="base.automation">&ndash;&gt;-->
+<!--            <field name="name">Hide password</field>-->
+<!--            <field name="model_id" ref="v__cloud_instances_manager.model_cloud_instance"/>-->
+<!--            <field name="type">ir.actions.server</field>-->
+<!--            <field name="active">True</field>-->
+<!--            <field name="state">code</field>-->
+<!--&lt;!&ndash;            <field name="code">records.write({"show_password": False})</field>&ndash;&gt;-->
+<!--            <field name="code">CloudInstanceAutomation().run(record)</field>-->
+<!--            <field name="trigger">on_time</field>-->
+<!--            <field name="filter_domain">"show_password", "=", True</field>-->
+<!--            <field name="trg_date_id">write_date</field>-->
+<!--            <field name="trg_date_range">10</field>-->
+<!--            <field name="trg_date_range_type">minutes</field>-->
+<!--        </record>-->
+
+<!-- scheduled action to ping server every 1 hour-->
+        <record id="cloud_instance_cron" model="ir.cron">
+            <field name="name">Ping server test</field>
+            <field name="model_id" ref="model_cloud_instance"/>
+            <field name="state">code</field>
+            <field name="code">model.cron_ping_ip_address()</field>
+            <field name="interval_number">1</field>
+            <field name="interval_type">hours</field>
+            <field name="active" eval="True"/>
+            <field name="doall" eval="True"/>
+        </record>
+    </data>
+</odoo>

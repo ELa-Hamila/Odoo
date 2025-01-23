@@ -1,0 +1,21 @@
+<?xml version="1.0" encoding="utf-8"?>
+<odoo>
+
+    <record id="module_cloud_instance" model="ir.module.category">
+        <field name="name">Cloud Instance</field>
+        <field name="sequence">9</field>
+    </record>
+
+    <!-- Definition of Administrator Group -->
+    <record id="group_cloud_instance_administrator" model="res.groups">
+        <field name="name">Administrator instance</field>
+        <field name="category_id" ref="module_cloud_instance"/>
+        <field name="implied_ids" eval="[(6, 0, [ref('group_cloud_instance_user')])]"/>
+    </record>
+
+    <!-- Definition of User Group -->
+    <record id="group_cloud_instance_user" model="res.groups">
+        <field name="name">User instance</field>
+        <field name="category_id" ref="module_cloud_instance"/>
+    </record>
+</odoo>

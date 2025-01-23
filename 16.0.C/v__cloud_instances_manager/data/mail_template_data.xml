@@ -1,0 +1,24 @@
+<?xml version="1.0"?>
+<odoo>
+    <data noupdate="1">
+        <record id="ping_notice_mail_template" model="mail.template">
+            <field name="name">Cloud instance: ping notice</field>
+            <field name="description">Sent to the client to inform that the server is down</field>
+            <field name="model_id" ref="v__cloud_instances_manager.model_cloud_instance"/>
+            <field name="subject">Server {{ object.ip_address }} is down!</field>
+            <field name="email_from">{{ user.email_formatted or ''}}</field>
+            <field name="email_to">{{ object.partner_id.email_formatted or ''}}</field>
+            <field name="body_html" type="html">
+                <div>
+                    Hi,
+                    <br/>
+                    <br/>
+                    We want to inform your server <t t-out="object.ip_address"/> is down.
+                    <br/>
+                    <br/>
+                    ERP team.
+                </div>
+            </field>
+        </record>
+    </data>
+</odoo>
